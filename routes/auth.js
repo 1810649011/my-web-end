@@ -37,7 +37,7 @@ router.post('/login', async (req, res) => {
   }
 });
 // test
-router.get('/', async (req, res) => {
+router.get('/test', async (req, res) => {
   res.json({
     code:200,
     msg: '欢迎光临'

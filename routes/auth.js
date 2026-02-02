@@ -36,5 +36,12 @@ router.post('/login', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+// test
+router.get('/', async (req, res) => {
+  res.json({
+    code:200,
+    msg: '欢迎光临'
+  });
+});
 
 module.exports = router;

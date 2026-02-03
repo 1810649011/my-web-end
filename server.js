@@ -5,7 +5,7 @@ const cors = require('cors');
 const authRoutes = require('./routes/auth');
 const todoRoutes = require('./routes/todo');
 const app = express();
-const PORT = process.env.PORT || 8888;
+const PORT = process.env.PORT || 1111;
 
 app.use(cors());
 app.use(express.json());

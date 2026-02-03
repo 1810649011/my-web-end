@@ -16,8 +16,8 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.error(err));
 
 // 路由
-app.use('/api/auth', authRoutes);
-app.use('/api/todo', todoRoutes);
+app.use('/auth', authRoutes);
+app.use('/todo', todoRoutes);
 
 app.listen(PORT, () => {
   console.log(`服务启动成功 on http://localhost:${PORT}`);

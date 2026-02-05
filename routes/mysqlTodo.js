@@ -5,10 +5,10 @@ const router = express.Router();
 
 // 获取列表（不分页）
 router.get("/list", async (req, res) => {
-  // const data = await Todo.findList(req.query);
+  const data = await Todo.findList(req.query);
   res.json({
     code: 200,
-    msg: '获取列表',
+    ...data,
   });
 });
 // 获取详情

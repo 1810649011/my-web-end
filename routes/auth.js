@@ -43,5 +43,12 @@ router.get('/test', async (req, res) => {
     msg: '欢迎光临'
   });
 });
+// test2
+router.get('/test1', async (req, res) => {
+  res.json({
+    code:200,
+    msg: '欢迎光临11111111111'
+  });
+});
 
 module.exports = router;

@@ -36,8 +36,6 @@ class Todo {
       
       // 自动补全为完整时间格式（只传日期时，默认从 00:00:00 开始）
       const start = startTime.length === 10 ? `${startTime} 00:00:00` : startTime;
-      console.log('startTime',startTime);
-      console.log('start',start);
       whereClauses.push("date >= ?");
       params.push(start);
     }
